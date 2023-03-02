@@ -24,6 +24,7 @@ li{
 /*___________________HEADER*/
 header{
     display:flex;
+    max-height: 100vh;
     background-color: #3A1078;
     flex-flow:column nowrap;
     position:sticky;
@@ -56,29 +57,37 @@ nav#nav ul li:hover{
 
 section#content-list-section{
     background-color: #4E31AA;
+    max-height: 100vh;
     min-width: 25vw;
     padding: 0 1em;
 
     display:flex;
     flex-flow: column;
+
     /*align-items: flex-start;*/
     /*justify-content: space-around;*/
 }
 
 div#content-list-search-block{
-    margin: 1em;
+    margin: 1em 0.5em;
+}
+div#content-list-search-block input{
+    max-width: 100%;
 }
 
 div#content-list-div{
     display:flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: start;
     gap :1em;
+    overflow:auto;
 }
 
 div.content-list-item{
-    margin:1em;
+    padding:1em;
     /*overflow:hidden;*/
+    background-color: rgba(255, 255,255, 0.1);
+    border-radius: 2vh;
 }
 
 div.content-list-item > p {
@@ -92,15 +101,69 @@ section#content-detail-section{
     background-color: #2F58CD;
     display:flex;
     flex-flow:column nowrap;
+    overflow:auto;
     max-width:max-content;
+    max-height: 100vh;
 }
 
 div#content-detail-top{
-    background-image: url("./dummy.png");
+    background-image:  linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.1)
+      ),url("./grenoble-1600x900.jpg");
+
+    background-position: center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-width: 40vw;
-    max-width: fit-content;
+    /*max-width: fit-content;*/
+    min-height: 30vh;
+
+    display:flex;
+    flex-flow:column;
+    align-items: flex-start;
 }
 
 div#content-detail-top p{
+    padding:0.2em 0.6em;
     font-weight: bold;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 2vh;
+    width:fit-content;
+    margin: 0.5em 2%;
+}
+
+div#content-detail-top p.content-detail-top-city{
+    font-size: 1.2em;
+}
+div#content-detail-top p.content-detail-top-temperature{
+    font-size: 2em;
+}
+
+div#content-detail-middle{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap:1em;
+    padding-top:1em;
+    padding-left: 1em;
+}
+
+div#content-detail-todo{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    gap:1em;
+}
+
+div#content-detail-todo h3{
+    font-size: 1.2em;
+}
+div#content-detail-todo p{
+    font-size: 0.8em;
+    margin-right: 3em;
+    overflow-wrap: break-word;
+
 }
