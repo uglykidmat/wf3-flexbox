@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Golos Text', sans-serif;
+}
+
+body{
+    background-color: #3a3a3a;
+    color:white;
+    display:flex;
+    min-height:100vh;
+    min-width:100vw;
+    
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*___________________HEADER*/
+header{
+    display:flex;
+    background-color: #3A1078;
+    flex-flow:column nowrap;
+ 
+}
+
+header div img{
+    min-width: 5vw;
+    max-width:8vw;
+    margin:1em;
+}
+
+/*___________________HEADER-NAV*/
+nav#nav{
+    display:flex;
+    justify-content: center;
+}
+
+nav#nav ul li{
+  margin:0.5em;
+  padding:0.5em;
+}
+nav#nav ul li:hover{
+    background-color: rgba(255, 255,255, 0.5);
+    border-radius: 1em;
+  }
+
+
+
+/*___________________CONTENT-LIST*/
+
+section#content-list-section{
+    background-color: #4E31AA;
+    min-width: 25vw;
+    padding: 0 1em;
+
+    display:flex;
+    flex-flow: column;
+    /*align-items: flex-start;*/
+    /*justify-content: space-around;*/
+}
+
+div#content-list-search-block{
+    margin: 5% 0;
+}
+
+div#content-list-div{
+    display:flex;
+    flex-flow: column;
+    justify-content: space-around;
+
+}
+
+div#content-list-item{
+    margin:5% 0;
+}
+
+
+/*___________________CONTENT-DETAILS*/
+
+section#content-detail-section{
+    background-color: #2F58CD;
+}
