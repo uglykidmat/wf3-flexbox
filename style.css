@@ -9,8 +9,7 @@ body{
     color:white;
     display:flex;
     min-height:100vh;
-    min-width:100vw;
-    
+    min-width:100vw;    
 }
 
 a{
@@ -27,7 +26,7 @@ header{
     display:flex;
     background-color: #3A1078;
     flex-flow:column nowrap;
- 
+    /*position:sticky;*/
 }
 
 header div img{
@@ -67,23 +66,29 @@ section#content-list-section{
 }
 
 div#content-list-search-block{
-    margin: 5% 0;
+    margin: 1em;
 }
 
 div#content-list-div{
     display:flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     justify-content: space-around;
 
 }
 
-div#content-list-item{
-    margin:5% 0;
+div.content-list-item{
+    margin:1em;
 }
 
+div.content-list-item > p {
+    font-weight: lighter;
+    font-size: small;
+}
 
 /*___________________CONTENT-DETAILS*/
 
 section#content-detail-section{
     background-color: #2F58CD;
+    display:flex;
+    flex-flow:column nowrap;
 }
