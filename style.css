@@ -8,8 +8,8 @@ body{
     background-color: #3a3a3a;
     color:white;
     display:flex;
-    min-height:100vh;
-    min-width:100vw;    
+    /*min-height:100vh;
+    min-width:100vw;    */
 }
 
 a{
@@ -26,7 +26,7 @@ header{
     display:flex;
     background-color: #3A1078;
     flex-flow:column nowrap;
-    /*position:sticky;*/
+    position:sticky;
 }
 
 header div img{
@@ -73,11 +73,12 @@ div#content-list-div{
     display:flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-
+    gap :1em;
 }
 
 div.content-list-item{
     margin:1em;
+    /*overflow:hidden;*/
 }
 
 div.content-list-item > p {
@@ -91,4 +92,15 @@ section#content-detail-section{
     background-color: #2F58CD;
     display:flex;
     flex-flow:column nowrap;
+    max-width:max-content;
+}
+
+div#content-detail-top{
+    background-image: url("./dummy.png");
+    min-width: 40vw;
+    max-width: fit-content;
+}
+
+div#content-detail-top p{
+    font-weight: bold;
 }
